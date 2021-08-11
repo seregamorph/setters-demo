@@ -1,25 +1,21 @@
 package com.example.settersdemo;
 
+import com.example.settersdemo.config.JacksonConfig;
 import com.example.settersdemo.model.AssignmentGroupedActivitiesResource;
+import com.example.settersdemo.model.ProductivityGroupResource;
 import com.example.settersdemo.model.UserActivitiesGroupingResource;
-import lombok.Data;
 
 import java.util.Arrays;
 
-public class SettersDemoApplication {
+public class ChainedSettersDemo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        AssignmentGroupedActivitiesResource resource = create();
+
+        System.out.println(JacksonConfig.createObjectMapper().writeValueAsString(resource));
     }
 
-
-    @Data
-    public static class ProductivityGroupResource {
-        private String sectionName;
-        private String color;
-        private long spentTime;
-    }
-
-    private static AssignmentGroupedActivitiesResource сreate() {
+    private static AssignmentGroupedActivitiesResource create() {
         return new AssignmentGroupedActivitiesResource()
                 .setGrouping(new UserActivitiesGroupingResource()
                         .setAlignmentScore(1)
@@ -42,7 +38,28 @@ public class SettersDemoApplication {
                         .setTotalTrackedTime(7L)
                         .setIntensityScore(2));
     }
-
-
-
+/*
+{
+  "grouping" : {
+    "alignmentScore" : 1,
+    "focusScore" : 0,
+    "advancedGroups" : [ {
+      "sectionName" : "Development",
+      "color" : "#2196f3",
+      "spentTime" : 5
+    }, {
+      "sectionName" : "Chat",
+      "color" : "#E502FA",
+      "spentTime" : 1
+    }, {
+      "sectionName" : "Other",
+      "color" : "#7D7878",
+      "spentTime" : 1
+    } ],
+    "periodLong" : 10,
+    "totalTrackedTime" : 7,
+    "intensityScore" : 2
+  }
+}
+*/
 }
