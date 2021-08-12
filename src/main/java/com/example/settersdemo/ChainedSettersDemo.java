@@ -38,6 +38,7 @@ public class ChainedSettersDemo {
                         .setTotalTrackedTime(7L)
                         .setIntensityScore(2));
     }
+
 /*
 {
   "grouping" : {
