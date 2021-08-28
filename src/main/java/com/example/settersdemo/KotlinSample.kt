@@ -19,11 +19,6 @@ private fun create(): AssignmentGroupedActivitiesResource {
                         sectionName = "Chat"
                         color = "#E502FA"
                         spentTime = 1L
-                    },
-                    ProductivityGroupResource().apply {
-                        sectionName = "Other"
-                        color = "#7D7878"
-                        spentTime = 1L
                     })
             periodLong = 10L
             totalTrackedTime = 7L

@@ -28,10 +28,6 @@ public class ChainedSettersDemo {
                                 new ProductivityGroupResource()
                                         .setSectionName("Chat")
                                         .setColor("#E502FA")
-                                        .setSpentTime(1L),
-                                new ProductivityGroupResource()
-                                        .setSectionName("Other")
-                                        .setColor("#7D7878")
                                         .setSpentTime(1L)
                         ))
                         .setPeriodLong(10L)

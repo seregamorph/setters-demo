@@ -26,15 +26,10 @@ public class ClassicSettersDemo {
         group2.setColor("#E502FA");
         group2.setSpentTime(1L);
 
-        ProductivityGroupResource group3 = new ProductivityGroupResource();
-        group3.setSectionName("Other");
-        group3.setColor("#7D7878");
-        group3.setSpentTime(1L);
-
         UserActivitiesGroupingResource grouping = new UserActivitiesGroupingResource();
         grouping.setAlignmentScore(1);
         grouping.setFocusScore(0);
-        grouping.setAdvancedGroups(Arrays.asList(group1, group2, group3));
+        grouping.setAdvancedGroups(Arrays.asList(group1, group2));
         grouping.setPeriodLong(10L);
         grouping.setTotalTrackedTime(7L);
         grouping.setIntensityScore(2);

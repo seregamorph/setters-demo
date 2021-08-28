@@ -5,7 +5,7 @@ import lombok.experimental.Accessors;
 
 @Data
 @Accessors(chain = true)
-public class ChainedDataPojo {
+public class DataPojo {
     private String value;
 }
 

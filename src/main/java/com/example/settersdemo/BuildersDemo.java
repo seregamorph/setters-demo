@@ -30,11 +30,6 @@ public class BuildersDemo {
                                         .sectionName("Chat")
                                         .color("#E502FA")
                                         .spentTime(1L)
-                                        .build(),
-                                ProductivityGroupResource.builder()
-                                        .sectionName("Other")
-                                        .color("#7D7878")
-                                        .spentTime(1L)
                                         .build()
                         ))
                         .periodLong(10L)
