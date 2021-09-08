@@ -1,7 +1,11 @@
 package com.example.settersdemo
 
+import com.example.settersdemo.model.AssignmentGroupedActivitiesResource
+import com.example.settersdemo.model.ProductivityGroupResource
+import com.example.settersdemo.model.UserActivitiesGroupingResource
+
 // snippet is commented, because it's not compilable when kotlin code is in the same module with lombok-generated classes,
-// but it's still valid :)
+// but it's still valid (just uncomment) :)
 /*
 private fun create(): AssignmentGroupedActivitiesResource {
     return AssignmentGroupedActivitiesResource().apply {

@@ -14,10 +14,3 @@ public class SimplePojo {
 
     // equals, hashCode, toString
 }
-
-
-
-
-
-
-
